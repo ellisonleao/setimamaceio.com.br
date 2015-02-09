@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Sétima Igreja Presbiteriana de Maceió" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://setimamaceio.com.br" />
+<meta property="og:image" content="http://setimamaceio.com.br/images/logo.png" />
+<meta name="description" content="Bem vindo ao site da Sétima Igreja Presbiteriana de Maceió">
+<meta name="keywords" content="igreja,presbiteriana,church, maceio,alagoas,brasil"> 
+<meta name="author" content="Ellison Leão">
+
+<title>Sétima Igreja Presbiteriana de Maceió</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="social-buttons.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="http://sawpf.com/1.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var size = $(window).width();
+    if (size < 1024 ){
+        alert("Este site é melhor visualizado numa resolução acima de 1024 pixels");
+    }
+
+    $('#nav').localScroll(800);
+    //.parallax(xPosition, speedFactor, outerHeight) options:
+    //xPosition - Horizontal position of the element
+    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+    $('#intro').parallax("50%", 0.1);
+    $('#whoweare').parallax("50%", 0.3);
+    $('#second').parallax("50%", 0.1);
+    $('.bg').parallax("70%", 0.4);
+    $('.logo').parallax("30%", 0.4);
+    $('#third').parallax("50%", 0.3);
+    $(window).resize(resizeWin); 
+    function resizeWin(){
+        var size = $(window).width();
+        if (size < 1220){
+            $("#nav").removeClass('navigation');    
+        }else{
+            $("#nav").addClass('navigation');    
+        }
+    }
+    resizeWin();
+
+})
+</script>
+</head>
+
+<body>
+    <ul id="nav" class="navigation">
+        <li><a href="#intro" title="A igreja"><img src="images/churchicon.png" alt="Link" /><p>A igreja</p></a></li>
+        <li><a href="#whoweare" title="Quem somos"><img src="images/info.png" alt="Link" /><p>Quem somos</p></a></li>
+        <li><a href="#second" title="Nossa Programação"><img src="images/calendaricon.png" alt="Link" /><p>Nossa Programação</p></a></li>
+        <li><a href="#third" title="Localização"><img src="images/mapicon.png" alt="Link" /><p>Localização</p></a></li>
+        <li><a href="#fifth" title="Redes Sociais"><img src="images/globeicon.png" alt="Link" /><p>Redes Sociais</p></a></li>
+        <li><a href="#sixth" title="Contato"><img src="images/mailicon.png" alt="Link" /><p>Contato</p></a></li>
+    </ul>
+    
+    <div id="intro">
+        <div class="story">
+            <div class="logo"></div>
+            <div class="float-right">
+                <h2>Visão</h2>
+                <p>Ser uma igreja missionária, acolhedora, comprometida e fundamentada na palavra de Deus, levando à sociedade, de forma simples e prática, o Reino de Deus</p>
+                <h2>Missão</h2>
+                <p>Adorar a Deus, pregar a Sua Palavra, realizar o Discipulado de seus membros, viver em Comunhão, servindo a Deus e ao próximo.</p>
+                <h2>Valores</h2>
+                <ul class="ul-intro">
+                    <li>A Palavra de Deus como regra de Fé e prática;</li>
+                    <li>Ética Cristã Reformada;</li>
+                    <li>Fidelidade ao sistema de governo da IPB</li>
+                    <li>Coerência entre ensino e prática</li>
+                    <li>Relacionamentos comprometidos e saudáveis.</li>
+                </ul>
+            </div>
+        </div> <!--.story-->
+    </div> <!--intro-->
+   
+    <div id="whoweare">
+        <div class="story">
+            <div class="float-left">
+                <h2>Quem somos</h2>
+                <p>A Igreja Presbiteriana do Brasil faz parte da comunidade cristã que, desde os dias apostólicos, tem reconhecido a Jesus como seu Salvador e Senhor. Em vários momentos da História houve desvios da fé, mas, como ocorreu no século XVI, movimentos de avivamento e reforma foram usados por Deus para sustentar o seu povo e fazer com que a mensagem do evangelho chegasse até nós.</p>
+            </div>
+            <div class="float-right">
+                <h2>Organização e Objetivos</h2>
+                <p>Nós nos reunimos em comunidades locais, como a Bíblia nos ensina. Cada igreja local é dirigida por um grupo de oficiais, chamado conselho. Os dirigentes que se dedicam a ensinar as Escrituras ao povo recebem o nome de pastores ou ministros. De acordo com o Novo Testamento, os outros também devem pastorear a comunidade, isto é, cuidar dela, e têm o nome de presbíteros (vem daí o nome da Igreja Presbiteriana).
+                A Igreja Presbiteriana do Brasil é a federação de igrejas presbiterianas locais espalhadas em nosso país.
+                Cada comunidade local que faz parte da federação presbiteriana tem como objetivo maior glorificar ao Senhor, reunindo-se como objetivo maior glorificar ao Senhor, reunindo-se para adorá-lo e provendo a educação cristã que vai ajudar no desenvolvimento do povo de Deus.
+                Assim eles poderão viver do mundo que o agrada em anunciar o evangelho de Jesus aos que não o conhecem.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="second">
+        <div class="story">
+            <div class="bg"></div>
+            <div class="float-left schedule">
+                <h2>Nossa Programação</h2>
+                <table class="bordered">
+                    <thead>
+                    <tr>
+                        <th>Dia da semana</th>        
+                        <th>Programação</th>
+                        <th>Horário</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>Quartas-feiras</td>        
+                        <td>Culto de oração</td>
+                        <td>19:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sextas-feiras</td>        
+                        <td>Conversa de gente grande</td>
+                        <td>20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados</td>        
+                        <td>K entre nós</td>
+                        <td>18:00</td>
+                    </tr>
+
+                    <tr>                
+                        <td>Domingos</td>        
+                        <td>Escola Dominical</td>
+                        <td>9:00</td>
+                    </tr>
+
+                    <tr>                
+                        <td>Domingos</td>        
+                        <td>Ensaio Ministério de Música</td>
+                        <td>11:00</td>
+                    </tr>
+
+                    <tr>                
+                        <td>Domingos</td>        
+                        <td>Culto de Adoração</td>
+                        <td>18:30</td>
+                    </tr>
+                </table>
+            </div>
+        </div> <!--.story-->
+        
+    </div> <!--second-->
+    
+    <div id="third">
+        <div class="story">
+            <div class="float-left location">
+                <h2>Nossa Localização</h2>
+               <iframe class="map" width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=setima+igreja+maceio&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=41.95363,93.076172&amp;t=m&amp;ie=UTF8&amp;hq=setima+igreja&amp;hnear=Macei%C3%B3+-+Alagoas,+Rep%C3%BAblica+Federativa+do+Brasil&amp;ll=-9.659477,-35.709429&amp;spn=0.040615,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                <br/>
+            </div>
+        </div> <!--.story-->
+    </div> <!--third-->
+    
+    <div id="fifth">
+        <div class="story">
+            <h2 class="social">Também estamos nas redes sociais</h2>
+            <ul>
+                <li><a href="http://twitter.com/setimamaceio/" target="_blank" class="sb orange large twitter">Twitter</a></li> 
+                <li><a href="https://www.facebook.com/setimaigreja.presbiteriana.1" target="_blank" class="sb orange large facebook">Facebook</a></li> 
+            </ul>
+        </div> <!--.story-->
+    </div> <!--fifth-->
+
+    <div id="sixth">
+        <div class="story">
+            <div class="contact">
+            <h2>Contato</h2>
+            <ul>
+                <li><a href="mailto:diglas@ig.com.br">diglas@ig.com.br</a></li>
+            </ul>
+            <p>+55 82 3317-2778</p>
+            <h2>Visite-nos!</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
